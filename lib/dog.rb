@@ -3,7 +3,10 @@ class Dog
     @name = name
     @breed = breed
   end
-  def breed(breed_name = "Mutt")
-  puts "#{breed_name}"
+  def breed=(breed_name = "Mutt")
+  @breed = breed_name
+end
+def breed
+  @breed
 end
 end
